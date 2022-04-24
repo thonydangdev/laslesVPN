@@ -45,3 +45,18 @@
     }
 
 }
+
+@media screen and (max-width: 1023.98px) {
+    .subscribe-container {
+        flex-direction: column;
+
+        & .boxed {
+            align-items: center;
+
+            & .heading {
+                text-align: center;
+            }
+        }
+    }
+
+}

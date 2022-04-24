@@ -10,6 +10,7 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
 <body>
@@ -20,25 +21,34 @@
                     <img srcset="./images/Logo.png 2x" alt="">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a href="#" class="menu-link">About</a>
+                            <a href="#" class="menu-link underline">About</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Features</a>
+                            <a href="#" class="menu-link underline">Features</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Pricing</a>
+                            <a href="#" class="menu-link underline">Pricing</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Testimonials</a>
+                            <a href="#" class="menu-link underline">Testimonials</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Help</a>
+                            <a href="#" class="menu-link underline">Help</a>
                         </li>
+                        <li class="menu-item">
+                            <a href="#" class="header-signin">Sign in</a>
+
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="btn btn-nofill header-signup">Sign up</a>
+                        </li>
+                        <button class="btn-close"><i class="fas fa-times"></i></button>
                     </ul>
                     <div class="header-auth">
                         <a href="#" class="header-signin">Sign in</a>
                         <a href="#" class="btn btn-nofill header-signup">Sign up</a>
                     </div>
+                    <button class="btn btn-toggle"><i class="fas fa-bars"></i></button>
                 </div>
             </div>
         </header>
@@ -127,7 +137,7 @@
             </section>
             <section class="plan">
                 <div class="grid wide">
-                    <div class="plan-header">
+                    <div class="boxed">
                         <h2 class="heading">Choose Your Plan</h2>
                         <p class="description">Let's choose the package that is best for you and explore it happily and
                             cheerfully.</p>
@@ -269,13 +279,18 @@
                         <div class="network-img">
                             <img src="./images/Network.png" alt="">
                         </div>
-                        <div class="network-partner">
-                            <img src="./images/netflix.png" alt="">
-                            <img src="./images/reddit.png" alt="">
-                            <img src="./images/amazon.png" alt="">
-                            <img src="./images/discord.png" alt="">
-                            <img src="./images/spotify.png" alt="">
-                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="partner">
+                <div class="grid wide">
+                    <div class="partner-container">
+                        <div class="partner-image"><img src="./images/netflix.png" alt=""></div>
+                        <div class="partner-image"><img src="./images/reddit.png" alt=""></div>
+                        <div class="partner-image"><img src="./images/amazon.png" alt=""></div>
+                        <div class="partner-image"><img src="./images/discord.png" alt=""></div>
+                        <div class="partner-image"><img src="./images/spotify.png" alt=""></div>
                     </div>
                 </div>
             </section>
@@ -434,8 +449,36 @@
                                 <img src="./images/Instagram.png" alt="">
                             </div>
                         </div>
+                        <div class="copyright">©2020LaslesVPN</div>
+                    </div>
+                    <div class="footer-total-links">
+                        <ul class="footer-list">
+                            <h2 class="heading">Product</h2>
+                            <li><a href="#" class="footer-link">Download</a></li>
+                            <li><a href="#" class="footer-link">Pricing</a></li>
+                            <li><a href="#" class="footer-link">Locations</a></li>
+                            <li><a href="#" class="footer-link">Server</a></li>
+                            <li><a href="#" class="footer-link">Countries</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                        </ul>
+                        <ul class="footer-list">
+                            <h2 class="heading">Engage</h2>
+                            <li><a href="#" class="footer-link">LaslesVPN ?</a></li>
+                            <li><a href="#" class="footer-link">FAQ</a></li>
+                            <li><a href="#" class="footer-link">Tutorials</a></li>
+                            <li><a href="#" class="footer-link">About Us</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        </ul>
+                        <ul class="footer-list">
+                            <h2 class="heading">Product</h2>
+                            <li><a href="#" class="footer-link">Affiliate</a></li>
+                            <li><a href="#" class="footer-link">Become Partner</a></li>
+
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </footer>
 

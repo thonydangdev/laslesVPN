@@ -11,4 +11,29 @@ $('.customer-list').slick({
     </button>`,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: false,
+                arrows: false
+            }
+        }
+
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 });
+const toggleBtn = document.querySelector('.btn-toggle');
+const closeBtn = document.querySelector('.btn-close');
+const menu = document.querySelector('.menu');
+toggleBtn.addEventListener('click', () => {
+    menu.classList.add('active')
+})
+closeBtn.addEventListener('click', () => {
+    menu.classList.remove('active')
+})

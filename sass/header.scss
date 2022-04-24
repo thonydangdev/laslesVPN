@@ -5,6 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
     &-auth {
@@ -18,6 +19,24 @@
         font-weight: 500;
         color: $heading-text-color;
     }
+
+
+    & .btn-toggle {
+        display: none;
+        background-color: $primary-color;
+
+        &:hover {
+            background-color: transparent;
+
+            & i {
+                color: $primary-color;
+            }
+        }
+
+        & i {
+            color: #fff;
+        }
+    }
 }
 
 .menu {
@@ -26,9 +45,80 @@
     gap: 0 40px;
     list-style: none;
 
+    &-item {
+
+        &:nth-child(6),
+        &:nth-child(7) {
+            display: none;
+        }
+    }
+
     &-link {
         color: inherit;
         font-size: inherit;
 
+
+    }
+
+    & .btn-close {
+        display: none;
     }
 }
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 80vw;
+        background-color: #fff;
+        z-index: 9999;
+        border-left: 1px solid #777;
+        flex-direction: column;
+        gap: 30px 0;
+        padding-top: 90px;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 0.3s;
+
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        &-item {
+
+            &:nth-child(6),
+            &:nth-child(7) {
+                display: block;
+            }
+        }
+
+
+        & .btn-close {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 30px;
+            background-color: #fff;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+
+    .header .btn-toggle {
+        display: block;
+    }
+
+    .header-auth {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {}

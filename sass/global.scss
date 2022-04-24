@@ -24,8 +24,13 @@ h6 {
     font-weight: 600;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
+    color: inherit;
 
 }
 
@@ -120,5 +125,37 @@ button {
     & .description {
         line-height: calc(30/16);
         text-align: center;
+    }
+}
+
+.underline {
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $primary-color;
+
+        &::after {
+            width: 100%;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 0;
+        height: 3px;
+        background-color: $primary-color;
+        transition: all 0.3s;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .boxed {
+        & .heading {
+            font-size: 28px !important;
+        }
     }
 }

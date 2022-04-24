@@ -7,7 +7,7 @@
 .grid.wide {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 .row {
@@ -437,6 +437,7 @@
 @media (min-width: 768px) and (max-width:1023px) {
     .wide {
         max-width: 900px;
+        padding: 0 15px;
     }
 }
 
@@ -444,6 +445,8 @@
 @media (min-width: 1024px) and (max-width:1239px) {
     .wide {
         width: 984px;
+        padding: 0 15px;
+
     }
 
     .wide .row {
